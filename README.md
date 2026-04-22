@@ -1,14 +1,11 @@
-# ACC102-StockCompare
-Interactive Stock Analysis Tool for ACC102 Mini Assignment (Track 4)
-
 # StockCompare: Interactive Global Top 50 Stocks Analysis Tool
 
 ## 📋 Project Overview
-An interactive Streamlit web app that helps Hong Kong and China retail investors quickly compare performance, risk, and return of major global stocks.
+An interactive Streamlit web app that helps retail investors and finance students quickly compare performance, risk, and return of major global stocks.
 
-**Target User**: Retail investors and finance students in Hong Kong/China.
+**Target User**: Retail investors and finance students.
 
-**Analytical Problem**: How can users easily compare multiple stocks’ price trends, cumulative returns, volatility, and risk-adjusted performance?  
+**Analytical Problem**: How can users easily compare multiple stocks’ price trends, cumulative returns, volatility, and risk-adjusted performance? 
 
 ## 📊 Dataset
 - **Name**: Global Top 50 Stocks Historical Data (2006–2026)
@@ -26,5 +23,5 @@ Please download the dataset from the Kaggle link above and place it in the root 
    ```bash
    pip install -r requirements.txt
 
-   **Author**: Ji Jia 
-**Module**: ACC102 Mini Assignment (Track 4 – Interactive Data Analysis Tool)
+**Author**: Ji Jia  
+**Module**: ACC102 Mini Assignment (Track 4 – Interactive Data Analysis Tool) 
