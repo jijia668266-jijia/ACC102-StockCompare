@@ -8,7 +8,7 @@ from datetime import datetime
 st.set_page_config(page_title="StockCompare", page_icon="📈", layout="wide")
 
 st.title("📈 StockCompare: Interactive Global Top 50 Stocks Tool")
-st.markdown("**Helping Hong Kong and China retail investors compare performance, risk and return**")
+st.markdown("**Helping retail investors and finance students compare performance, risk and return**")
 
 # Load data
 @st.cache_data
@@ -35,8 +35,8 @@ max_date = df['Date'].max().date()
 date_range = st.sidebar.date_input("Date Range", [datetime(2025,1,1).date(), max_date], min_value=min_date, max_value=max_date)
 
 # Filter data
-filtered_df = df[(df['Ticker'].isin(selected_tickers)) & 
-                 (df['Date'].dt.date >= date_range[0]) & 
+filtered_df = df[(df['Ticker'].isin(selected_tickers)) &
+                 (df['Date'].dt.date >= date_range[0]) &
                  (df['Date'].dt.date <= date_range[1])]
 
 # Main content
@@ -70,7 +70,7 @@ with tab2:
         'Daily_Return': 'mean'
     }).reset_index()
     summary['Annualized_Return'] = summary['Daily_Return'] * 252
-    
+   
     fig3, ax3 = plt.subplots(figsize=(10, 7))
     sns.scatterplot(data=summary, x='Annualized_Volatility', y='Annualized_Return', s=120, ax=ax3)
     for i, row in summary.iterrows():
