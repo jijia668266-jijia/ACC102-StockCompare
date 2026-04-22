@@ -22,6 +22,27 @@ Please download the dataset from the Kaggle link above and place it in the root 
 3. Install dependencies:
    ```bash
    pip install -r requirements.txt
+4. Run the app:
+   streamlit run app.py
+
+✨ Main Features
+
+Multi-stock selection (50 global top companies)
+Custom date range filter
+Price trend & cumulative return charts
+Risk-return scatter plot
+Key metrics table (Sharpe Ratio, volatility, etc.)
+
+📁 Project Structure
+
+app.py – Main Streamlit application
+stock_analysis_notebook.ipynb – Complete Python analysis workflow
+requirements.txt – Python dependencies
+figures/ – Saved visualization charts
+top_companies_20y_daily_combined.csv – Dataset (download from Kaggle)
+
+🔍 Key Insights
+See stock_analysis_notebook.ipynb for detailed analysis and visualizations.
 
 **Author**: Ji Jia  
 **Module**: ACC102 Mini Assignment (Track 4 – Interactive Data Analysis Tool) 
